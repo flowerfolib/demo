@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+</head>
+<body>
+  <div class='container'>
+    <h2>Thao tác trên mảng</h2>
+    <div class='d-flex-center row '>
+        <div class="d-flex-center containerButton">
+          <button onclick="createArray()">Tạo mảng</button>
+        </div>
+        <div class="d-flex-center containerNumber">
+          <p id="numberList"></p>
+        </div>
+    </div>
+    <div class='row'>
+        <p>Giá trị mảng sau khi xử lí</p>
+    </div>
+    <div class='row'>
+        <div class="d-flex-center containerOption"  onchange='toggleCheckbox("increase","deincrease")'>
+          <input type="checkbox"  id='increase' checked/>
+          <p>Sắp xếp tăng</p>
+        </div>
+        <div class="d-flex-center containerOption"   onchange='toggleCheckbox("deincrease","increase")'>
+          <input type="checkbox"  id='deincrease'/>
+          <p>Sắp xếp tăng</p>
+        </div>
+    </div>
+    <div class='row'>
+        <div class="d-flex-center containerInput">
+          <p>Thêm vào vị trí</p>
+          <input type="number"  id='position'/>
+        </div>
+        <div class="d-flex-center containerInput">
+          <p>Giá trị</p>
+          <input type="number"  id='valueInput'/>
+        </div>
+        <button onclick="getValue()">Thêm</button> 
+    </div>
+  </div>
+  <script type="text/javascript" src="./main.js"></script>  
+</body>
+</html>

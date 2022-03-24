@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BT7</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container"> 
+      <div class="row_input">
+        <div class="textBox">
+          <span>UserID</span>
+        </div>
+        <input class='form_demo'  type="text" id="userID"  maxlength="12" />
+      </div>
+      <div class="row_input">
+        <div class="textBox">
+          <span>Password</span>
+        </div>
+        <input class='form_demo'  type="password" id="password"  maxlength="12" />
+      </div>
+      <div class="row_input">
+        <div class="textBox">
+          <span>Name</span>
+        </div>
+        <input class='form_demo'  type="text" id="name" />
+      </div>
+      <div class="row_input">
+        <div class="textBox">
+          <span>Address</span>
+        </div>
+        <input class='form_demo'  type="text" id="address" />
+      </div>
+      <div class="row_input">
+        <div class="textBox">
+          <span>Country</span>
+        </div>
+        <select name="cars" id="cars" class="form_demo">
+            <option value="" disabled selected>Choose your Country</option>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+      </div>
+      <div class="row_input">
+        <div class="textBox">
+          <span>zip code</span>
+        </div>
+        <input class='form_demo'  type="text" id="zipcode" />
+      </div>
+      <div class="row_input">
+        <div class="textBox">
+          <span>Sex</span>
+        </div>
+        <input class='form_demo'  type="checkbox" id="male"  name="male" value="male"  onchange='toggleCheckbox("male","female")'/>
+        <label for="male">Male</label><br>
+        <input class='form_demo'  type="checkbox" id="female"  name="female" value="female"  onchange='toggleCheckbox("female","male")'/>
+        <label for="female">Female</label><br>
+      </div>
+      <button type="submit" onclick="handleSubmit()">Submit</button>
+    </div> 
+    <script src="./main.js"></script>
+  </body>
+</html>
