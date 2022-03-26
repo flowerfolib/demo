@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h4>Tên</h4>
+      <input class="form_demo" type="text" id="name" />
+      <button onClick="handleSubmit()">Submit</button>
+      <button onClick="deleteName()">Delete</button>
+    </div>
+    <div class="container">
+        <h4>Banner</h4>
+      <input class="form_demo" type="file" id="banner"  onChange="loadFile(event)"/>
+      <button onClick="loadFile(event)">Change</button>
+      <button onClick="deleteBanner()">Delete</button>
+    </div>
+    <div class="list_feedback">
+        
+      <input class="form_demo" type="text" id="titleFirst" />
+      <button onClick="changeTitleFirst()">Change</button></div>
+    <img id="output"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./main.js"></script> 
+  </body>
+</html>
