@@ -1,5 +1,42 @@
-.container {
-    display: flex;
-    justify-content:center;
-    align-items:center;
+.boxButton button {
+    width: 80px;
+    height: 40px;
+    color:#fff;
+    cursor: pointer;
 }
+.boxButton {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 30px;
+}
+.parent {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 2fr) 1fr 1fr; 
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    }
+    .parent .header {
+        background-color: brown;
+        height:50px;
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        color:#fff;
+    }
+
+    .parent .content {
+        background-color: grey;
+        
+        height:50px;
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        color:#fff;
+    }
