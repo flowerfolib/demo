@@ -8,23 +8,33 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="container">
-        <h4>Tên</h4>
-      <input class="form_demo" type="text" id="name" />
-      <button onClick="handleSubmit()">Submit</button>
-      <button onClick="deleteName()">Delete</button>
-    </div>
-    <div class="container">
-        <h4>Banner</h4>
-      <input class="form_demo" type="file" id="banner"  onChange="loadFile(event)"/>
-      <button onClick="loadFile(event)">Change</button>
-      <button onClick="deleteBanner()">Delete</button>
-    </div>
-    <div class="list_feedback">
-        
-      <input class="form_demo" type="text" id="titleFirst" />
-      <button onClick="changeTitleFirst()">Change</button></div>
-    <img id="output"/>
+     <div class="container">
+       <div class="table">
+         <lable class="">Name</lable>
+         <input type="text" class="inputTable"/>
+         <lable class="">Email</lable>
+         <input type="text" class="inputTable"/>
+         <lable class="">Password</lable>
+         <input type="text" class="inputTable"/>
+         <lable class="">Link</lable>
+         <input type="text" class="inputTable"/> 
+       </div>
+       <div class="boxButton">
+          <button style="background-color:green" id="add">Add</button>
+          <button style="background-color:red" id="delete">Delete</button>
+          <button style="background-color:yellow" id="update">Update</button>
+          <button style="background-color:brown" id="reset">Reset</button>
+        </div>
+     </div>
+     <div class="parent" style="margin-top:50px">
+        <div class="header">Name</div>
+        <div class="header">Email</div>
+        <div class="header">PassWord</div>
+        <div class="header">Link</div> 
+     </div>
+     
+     <div class="parent" id="ok"> 
+   </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./main.js"></script> 
   </body>
